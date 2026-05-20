@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Callaholic — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #FAFAFA;
+    --surface: #FFFFFF;
+    --text: #111111;
+    --muted: #555555;
+    --accent: #2563EB;
+    --border: rgba(0, 0, 0, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111111;
+      --surface: #1B1B1B;
+      --text: #F2F2F2;
+      --muted: #A0A0A0;
+      --accent: #60A5FA;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+  }
+  *,*::before,*::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 48px 20px 80px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 48px 36px;
+  }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 36px 0 12px; }
+  p, li { margin: 12px 0; }
+  ul { padding-left: 20px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0 24px;
+  }
+  .disclaimer {
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+  }
+  code { font-family: "SF Mono", ui-monospace, monospace; font-size: 0.95em; }
+  @media (max-width: 600px) {
+    body { padding: 24px 12px 56px; }
+    main { padding: 32px 22px; border-radius: 12px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy — Callaholic</h1>
+<p class="updated">Last updated: 20 May 2026</p>
+
+<p>Callaholic is built around a single principle: <strong>your data stays on your device</strong>. This policy explains what that means in practice.</p>
+
+<h2>What Callaholic does on your device</h2>
+
+<p>Callaholic helps you keep up with the daily practice of calling your fellows. To do that, the app stores:</p>
+
+<ul>
+  <li><strong>Fellow tags.</strong> When you mark a contact as a "fellow," Callaholic saves only the stable contact identifier from your iPhone Contacts, plus any sobriety date, approximate years sober, or notes you choose to add.</li>
+  <li><strong>Call logs.</strong> When you log a call, Callaholic saves the timestamp and the outcome you selected (Completed, Voicemail, No answer).</li>
+  <li><strong>Preferences.</strong> Your indicator markers (e.g. "AA"), Newcomer / Old Timer thresholds, daily reminder time, and the Recently Met window are stored as settings on the device.</li>
+</ul>
+
+<p>All of this lives in the app's local database (SwiftData) on your iPhone. None of it is uploaded to any server controlled by the developer.</p>
+
+<h2>What Callaholic reads from your iPhone</h2>
+
+<p>Callaholic asks for <strong>read-only access to your iPhone Contacts</strong>. The app uses this to:</p>
+
+<ul>
+  <li>Scan your contacts for the indicator markers you've configured (default: "AA") and suggest matches as potential fellows.</li>
+  <li>Fetch the display name and phone number of a tagged fellow when you tap Call, so the call can be placed.</li>
+</ul>
+
+<p>Callaholic <strong>does not</strong> modify your iPhone Contacts. It does not add, edit, or delete entries.</p>
+
+<p>When iOS asks how you want to share contacts, you can choose Full Access (Callaholic sees all your contacts) or Limited Access (Callaholic sees only the contacts you specifically share). Either works; Limited Access just means the indicator scan can only see the contacts you've explicitly shared.</p>
+
+<h2>What Callaholic sends off your device</h2>
+
+<p><strong>Nothing.</strong> Callaholic has no backend server, no analytics SDK, no tracking, no advertising. The developer has no way to see your fellows, your call history, your sobriety dates, or anything else.</p>
+
+<p>The only network requests the app makes are when you tap an external link (for example, a link to this privacy policy). Those open in your browser and are governed by the browser's own privacy behaviour.</p>
+
+<h2>Optional iCloud sync (not yet enabled)</h2>
+
+<p>Future versions may offer optional iCloud sync, so your fellow tags and call history follow you between Apple devices (e.g. iPhone and iPad). If we add this:</p>
+
+<ul>
+  <li>It will be <strong>opt-in</strong>, off by default.</li>
+  <li>The data syncs into your <strong>private CloudKit container</strong> — only your iCloud account can read it. The developer has no access.</li>
+  <li>You can turn it off anytime in Settings.</li>
+</ul>
+
+<p>Until you explicitly turn it on, nothing leaves your iPhone.</p>
+
+<h2>Anonymity</h2>
+
+<p>Callaholic is built with respect for the 12th Tradition. The app never collects identifying information about you or your fellows, never publishes anything to a public profile, never asks for an account, and never shares data with third parties.</p>
+
+<h2>Permissions you may see</h2>
+
+<ul>
+  <li><strong>Contacts</strong> — required, as described above.</li>
+  <li><strong>Notifications</strong> — optional, only used to fire the daily reminder you configure in Settings.</li>
+</ul>
+
+<p>You can revoke either permission at any time in iPhone Settings → Privacy & Security.</p>
+
+<h2>Children</h2>
+
+<p>Callaholic is not directed at children under 13 and does not knowingly collect any information from anyone.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy changes, the updated version will be posted at the same URL with a new "Last updated" date.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy can be sent to: <a href="mailto:george.gardner480@gmail.com">george.gardner480@gmail.com</a></p>
+
+<hr>
+
+<p class="disclaimer">Callaholic is not affiliated with or endorsed by Alcoholics Anonymous. The 12 Steps, 12 Traditions, and other AA materials referenced here are the work of AA World Services, Inc.</p>
+
+</main>
+</body>
+</html>
